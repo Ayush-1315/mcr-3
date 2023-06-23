@@ -15,8 +15,6 @@ function App() {
   useEffect(()=>{
 setFilter(filterBy)
   },[filterBy,setFilter])
-  console.log(filteredData);
-  console.log('Filter',filterBy)
   return (
     <div className="App">
       <input type="text" placeholder="Search with Product or Ingredients...." onChange={(e)=>setSearch(e.target.value)}/>
